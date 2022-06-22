@@ -4,65 +4,65 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Задание 1");
-        int[] a=new int[3];
-        a[0]=1;
-        a[1]=2;
-        a[2]=3;
-        int b=a[0];
-        int c=a[1];
-        int d=a[2];
-        System.out.println(b);
-        System.out.println(c);
-        System.out.println(d);
+        int[] arrInt = new int[3];
+        arrInt[0] = 1;
+        arrInt[1] = 2;
+        arrInt[2] = 3;
+        /*int b=arrInt[0];
+        int c=arrInt[1];
+        int d=arrInt[2];*/
+        System.out.println(arrInt[0]);
+        System.out.println(arrInt[1]);
+        System.out.println(arrInt[2]);
 
-        double[] e = {1.57, 7.654, 9.986};
-        for (int i = 0; i < e.length; i++) {
-            System.out.println(e[i]);
+        double[] arrDouble = {1.57, 7.654, 9.986};
+        for (int i = 0; i < arrDouble.length; i++) {
+            System.out.println(arrDouble[i]);
         }
 
-        float[] arr = {32.234f, 40.678f, 12f, 5f};
-        for (int l = 0; l < arr.length; l++) {
-            System.out.println(arr[l]);
+        float[] arrFloat = {32.234f, 40.678f, 12f, 5f};
+        for (int l = 0; l < arrFloat.length; l++) {
+            System.out.println(arrFloat[l]);
         }
 
-        System.out.println(a[0]+", "+a[1]+", "+a[2]);
-        System.out.println(e[0]+", "+e[1]+", "+e[2]);
-        System.out.println(arr[0] + ", " + arr[1] + ", " + arr[2] + ", " + arr.length);
+        System.out.println(arrInt[0] + ", " + arrInt[1] + ", " + arrInt[2]);
+        System.out.println(arrDouble[0] + ", " + arrDouble[1] + ", " + arrDouble[2]);
+        System.out.println(arrFloat[0] + ", " + arrFloat[1] + ", " + arrFloat[2] + ", " + arrFloat.length);
 
 
-
-        for (int k = a.length-1; k >=0 ; k--) {
-            if(k==0)
-                System.out.printf("%s ",a[k]);
-            else
-                System.out.printf("%s, ",a[k]);
-        }
-
-        System.out.println();
-        for (int j=e.length-1; j>=0;j--) {
-            if(j==0)
-                System.out.printf("%s ",e[j]);
-            else
-                System.out.printf("%s, ",e[j]);
-
-        }
-
-
-        System.out.println();
-        for (int l = arr.length-1; l >=0 ; l--) {
-            if(l==0)
-                System.out.printf("%s ",arr[l]);
-            else
-                System.out.printf("%s, ",arr[l]);
-        }
-
-        System.out.println();
-        for (int k=0;k<a.length;k++){
-            if (a[k]%2!=0){
-                a[k]+=1;
-                System.out.print(a[k]+" ");
+        for (int i = arrInt.length-1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(arrInt[i]);//"%s ",
+            } else {
+                System.out.print(arrInt[i] + ", ");//"%s, ",
             }
         }
 
+        System.out.println();
+        for (int i = arrDouble.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(arrDouble[i]);//"%s ",
+            } else {
+                System.out.print(arrDouble[i] + ", ");//"%s, ",
+            }
+
+        }
+
+        System.out.println();
+        for (int i = arrFloat.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(arrFloat[i]);//"%s ",
+            } else {
+                System.out.print(arrFloat[i] + ", ");//"%s, ",
+            }
+        }
+
+        System.out.println();
+        for (int i = 0; i < arrInt.length; i++) {
+            if (arrInt[i] % 2 != 0) {
+                arrInt[i] += 1;
+                System.out.print(arrInt[i] + " ");
+            }
+        }
     }
 }
